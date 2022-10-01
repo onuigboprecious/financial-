@@ -567,6 +567,7 @@ body {
     padding-top: 1rem;
     width: 329px;
     height: 300px;
+    padding-bottom: 10rem;
   }
   /* parterns*/
   #trust {
@@ -624,7 +625,6 @@ body {
   }
 
   /*=======footer========*/
- /*==============support===============*/
 .widget-title {
   letter-spacing: 0.5rem;
   font-size: 14px;
