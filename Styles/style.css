@@ -472,11 +472,11 @@ body {
     background: var(--white-bg);
     position: absolute;
     margin-top: 12cm;
-    display:none;
+    display: none;
   }
   .card-body {
     margin-top: 1rem;
-    display:flex;
+    display: flex;
   }
   .intro-card .card-text {
     font-size: 10px;
@@ -492,52 +492,51 @@ body {
     color: var(--primary-color);
   }
 
+  /*service*/
+  #services {
+    height: 100%;
+    z-index: 1;
+  }
 
-/*service*/
-#services { 
-  height: 100%;
-  z-index: 1;
-}
+  .service {
+    font-size: 15px;
+    margin-top: 1rem;
+    text-align: center;
+    letter-spacing: 0.5rem;
+  }
+  .rule {
+    height: 3px;
+    width: 140px;
+    position: relative;
+    left: 30%;
+    margin-bottom: 4rem;
+  }
 
-.service {
-  font-size: 15px;
-  margin-top: 1rem;
-  text-align: center;
-  letter-spacing: 0.5rem;
-}
-.rule {
-  height: 3px;
-  width: 140px;
-  position: relative;
-  left: 30%;
-  margin-bottom: 4rem;
-}
+  .card-service {
+    margin-bottom: 10rem;
+    position: relative;
+  }
 
-.card-service {
-  margin-bottom: 10rem;
-  position: relative;
-}
+  .card-side {
+    position: absolute;
+  }
 
-.card-side{
-position: absolute;
-}
-
-#services .service-pic {
-  width: 16rem;
-  border-radius: 10px;
-}
-.card-service h3 {
-  text-align: center;
-  font-size: 10px;
-  margin-top: 0.1rem;
-  letter-spacing: 0.1rem;
-}
+  #services .service-pic {
+    width: 15rem;
+    border-radius: 10px;
+  }
+  .card-service h3 {
+    text-align: center;
+    font-size: 10px;
+    margin-top: 0.1rem;
+    letter-spacing: 0.1rem;
+  }
 
   /* about*/
   #about {
     padding-top: 1rem;
     margin-bottom: 1rem;
-    height:60vh;
+    height: 60vh;
     z-index: 1;
   }
 
@@ -569,7 +568,7 @@ position: absolute;
   #trust {
     margin-bottom: 1rem;
     height: auto;
-    position:relative;
+    position: relative;
     padding-top: 40rem;
     width: auto;
   }
@@ -598,7 +597,6 @@ position: absolute;
     margin-bottom: 0.1rem;
   }
 
-
   /*testimonail*/
   #testify {
     padding-top: 1cm;
@@ -623,7 +621,6 @@ position: absolute;
 
   .copyright_area {
     text-align: center;
-   
   }
   .copyright_text {
     letter-spacing: 000.2rem;
@@ -631,5 +628,4 @@ position: absolute;
     font-size: 9px;
     margin-top: 9rem;
   }
-
 }
