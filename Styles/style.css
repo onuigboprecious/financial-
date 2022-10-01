@@ -521,18 +521,21 @@ body {
     position: relative;
   }
 
-  .card-side {
+   .card-side {
     position: absolute;
-  }
+  } 
 
   #services .service-pic {
-    width: 15rem;
-    border-radius: 10px;
+    width:100%;
+    height: auto;
+    text-align: center;
+    border-radius: 5px;
+    object-fit: cover;
   }
   .card-service h3 {
     text-align: center;
-    font-size: 10px;
-    margin-top: 0.1rem;
+    font-size: 14px;
+    margin-top: 0.2rem;
     letter-spacing: 0.1rem;
   }
 
