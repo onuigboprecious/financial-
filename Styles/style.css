@@ -625,6 +625,7 @@ body {
 
   /*=======footer========*/
   .widget-title {
+
     margin-bottom: 0.5rem;
   }
   .footer_menu li {
@@ -645,7 +646,6 @@ body {
     letter-spacing: 0.2rem;
     color: var(--text-color);
     font-size: 9px;
-    margin-top: 1rem;
-    position: sticky;
+    margin-top: 5rem;
   }
 }
