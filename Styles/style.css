@@ -534,7 +534,7 @@ color: var(--text-color);
     height: 19rem;
     max-width: 400px;
     margin: 0.5rem;
-    margin-bottom: 10rem;
+    margin-bottom: 12rem;
     box-shadow: none;
     background: none;
   }
@@ -572,7 +572,7 @@ color: var(--text-color);
     padding-top: 1rem;
     width: 329px;
     height: 300px;
-    padding-bottom: 10rem;
+    padding-bottom: 11rem;
   }
   /* parterns*/
   #trust {
