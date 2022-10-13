@@ -158,7 +158,7 @@ body {
   margin-bottom: 4rem;
 }
 .card-service {
-  perspective: 170rem;
+  perspective: 180rem;
   position: relative;
   height: 19rem;
   max-width: 400px;
@@ -528,6 +528,16 @@ color: var(--text-color);
   .card-side.back {
     height: fit-content;
   }
+  .card-service {
+    perspective: 180rem;
+    /* position: relative; */
+    height: 19rem;
+    max-width: 400px;
+    margin: 0.5rem;
+    margin-bottom: 10rem;
+    box-shadow: none;
+    background: none;
+  }
 
   /* about*/
   #about {
@@ -571,6 +581,8 @@ color: var(--text-color);
     /* position: relative; */
     padding-top: 110rem;
     width: auto;
+    margin-left: auto;
+    margin-right: auto;
 
   }
 
@@ -592,13 +604,13 @@ color: var(--text-color);
   .swiper {
     /* max-width: 100%; */
     height: 40vh;
-    width: 35vh;
+    width: 25vh;
     justify-content: center;
     margin-top: 1cm;
     margin-bottom: 0.1rem;
   }
   .swiper-wrapper {
-    width: 100%;
+    width: 60%;
   }
   .swiper-wrapper .clientee-pic {
     object-fit: contain;
