@@ -578,8 +578,8 @@ color: var(--text-color);
   /* parterns*/
   #trust {
     margin-bottom: 1rem;
+    /* margin-top: 1rem; */
     height: auto;
-    /* position: relative; */
     padding-top: 110rem;
     width: auto;
     margin-left: auto;
@@ -589,7 +589,7 @@ color: var(--text-color);
 
   #trust .trust-text {
     font-size: 15px;
-    margin-top: 0.1rem;
+    margin-top: 10rem;
     padding-top: 2rem;
   }
 
