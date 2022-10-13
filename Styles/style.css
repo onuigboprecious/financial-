@@ -520,6 +520,14 @@ color: var(--text-color);
   .card-side {
     position: absolute;
   }
+  #services .service-pic {
+    width: 15rem;
+    height: 14rem;
+    border-radius: 5px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+  }
   .card-service h3 {
     text-align: center;
     font-size: 13px;
@@ -566,13 +574,6 @@ color: var(--text-color);
     letter-spacing: 0.1rem;
     color: var(--main-color);
 
-  }
-
-  #about .about-photo {
-    padding-top: 1rem;
-    width: 329px;
-    height: 300px;
-    padding-bottom: 11rem;
   }
   /* parterns*/
   #trust {
