@@ -2,11 +2,11 @@
 
 :root {
   --main-color: #f4f4f4;
-  --primary-color: #24cae2;
+  --primary-color: #744402;
   --text-color: #000;
   --transition: 0.4s ease-out;
   --white-bg: #ffffff;
-  --cards-color: linear-gradient(43deg, #4158d0 0%, #c850c0 46%, #ffcc70 100%);
+  --cards-color: #744402;
   --font: 'Poppins', sans-serif;
 }
 
@@ -39,7 +39,11 @@ body {
   width: 100%;
   left: 0;
 }
-
+.navbar .navbar-brand {
+  object-fit: contain;
+  width: 100px;
+  height: 60px;
+}
 .intro {
   padding-top: 5rem;
   height: 100vh;
@@ -112,14 +116,17 @@ body {
 /*================services we offer===========*/
 #services {
   background: var(--main-color);
-  height: 100vh;
+  /* height: 100vh; */
   position: absolute;
   width: 100%;
+  margin-bottom: 5rem;
+  margin-top: 0;
+  padding-top: 2rem;
 }
 .service {
   font-family: 'poppins';
   font-size: 24px;
-  margin-top: 7rem;
+  margin-top: 5rem;
   text-align: center;
   text-transform: uppercase;
   font-family: var(--font);
@@ -127,37 +134,42 @@ body {
 }
 
 #services .service-pic {
-  width: 14rem;
-  border-radius: 15px;
+  width: 19rem;
+  height: 14rem;
+  border-radius: 5px;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
 }
 .card-service h3 {
   text-align: center;
   font-size: 14px;
-  margin-top: 1rem;
+  margin-top: 2rem;
   letter-spacing: 0.2rem;
 }
 
 .rule {
   height: 3px;
-  width: 200px;
-  background-color: var(--primary-color);
+  width: 197px;
+  background-color: var(--cards-color);
   text-align: center;
   position: relative;
   left: 41%;
   margin-bottom: 4rem;
 }
 .card-service {
-  perspective: 150rem;
+  perspective: 170rem;
   position: relative;
-  height: 10rem;
+  height: 19rem;
   max-width: 400px;
-  margin: 2rem;
+  margin: 0.5rem;
+  margin-bottom: 10rem;
   box-shadow: none;
   background: none;
 }
 
 .card-side {
-  height: 20rem;
+  height: 25rem;
   border-radius: 15px;
   transition: all 0.8s ease;
   backface-visibility: hidden;
@@ -165,21 +177,31 @@ body {
   top: 0;
   left: 0;
   width: 100%;
-  padding: 2rem;
-  color: white;
+  padding: 1rem;
+  color: var(--text-color);
+  margin-bottom: 5rem;
 }
-
+.card-side .btn-more{
+  background-color: #744402;
+  color: var(--main-color);
+  margin: 5px;
+}
+.card-side .btn-more:hover{
+background: #744302
+}
 .card-side.back {
   transform: rotateY(-180deg);
-  background-color: #0093e9;
-  background-image: linear-gradient(160deg, #0093e9 0%, #80d0c7 100%);
+  background-color: #1c1b17;
+  color: var(--main-color);
+  font-size: 12px;
+  height: 27rem;
 }
 .card-side.back p {
   font-size: 12px;
 }
 .card-side.front {
-  background-color: #4158d0;
-  background-image: var(--cards-color);
+  background-color: var(--cards-color);
+color: var(--main-color);
 }
 
 .card-service:hover .card-side.front {
@@ -196,9 +218,8 @@ body {
   background: var(--white-bg);
   height: 100vh;
   width: 100%;
-  margin-top: 38rem;
-  margin-bottom: 8rem;
-  position: relative;
+  margin-top: 80rem;
+
 }
 #trust .trust-text {
   font-family: 'poppins';
@@ -213,8 +234,8 @@ body {
 
 .trust .rule {
   height: 3px;
-  width: 447px;
-  background-color: var(--primary-color);
+  width: 450px;
+  background-color: var(--cards-color);
   text-align: center;
   position: relative;
   left: 30%;
@@ -237,7 +258,10 @@ body {
   border-radius: 18px;
   font-size: 14px;
   font-weight: bold;
-  color: #e2e2e2;
+  color: #ffffff;
+}
+#trust .swiper-button-prev, #trust .swiper-button-next{
+  color: var(--main-color);
 }
 
 .swiper-slide:nth-child(1n) {
@@ -281,7 +305,7 @@ body {
 #about .rule {
   height: 3px;
   width: 420px;
-  background-color: var(--primary-color);
+  background-color: var(--cards-color);
   position: relative;
   left: 0%;
   margin-bottom: 3rem;
@@ -294,6 +318,7 @@ body {
 #about .btn-more {
   background: var(--primary-color);
   letter-spacing: 0.2rem;
+  color: var(--main-color);
 }
 
 #about .about-photo {
@@ -315,10 +340,10 @@ body {
 #testify .rule {
   height: 3px;
   width: 255px;
-  background-color: var(--primary-color);
+  background-color: var(--cards-color);
   text-align: center;
   position: relative;
-  left: 38.5%;
+  left: 38%;
   margin-bottom: 4rem;
 }
 .testify-text {
@@ -347,111 +372,81 @@ body {
 /*==============footer==================*/
 #footer {
   padding-top: 5rem;
-  margin-bottom: 2rem;
-  height: 50vh;
-  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: var(--font);
 }
 
-#footer .footer-text {
+.container .footer-text {
   font-size: 13px;
-  letter-spacing: normal;
+  letter-spacing: 0.1rem;
 }
-.widget .company-name {
-  color: var(--primary-color);
-  font-size: 20px;
-  font-weight: 600;
-  letter-spacing: 0.5rem;
-  text-transform: uppercase;
-  text-align: center;
-}
-.widget .rule {
-  height: 3px;
-  width: 290px;
-  background-color: var(--primary-color);
-  text-align: center;
-  position: relative;
-  left: 10%;
-  margin-bottom: 1rem;
+.social {
+  list-style-type: none;
+  display: flex;
 }
 
-#footer .social li {
-  display: inline-block;
-  font-size: 20px;
-  font-weight: 100;
-  padding-right: 2rem;
-  justify-items: center;
-}
-#footer .social li .fab {
-  color: var(--primary-color);
-}
-#footer .social li .fab:hover {
-  color: cornflowerblue;
+.social li a {
+  text-decoration: none;
+  margin: 1rem;
+  font-size: 27px;
   transition: var(--transition);
+  color: var(--cards-color) ;
+}
+.social li a:hover{
+color:var(--primary-color) ;
 }
 
-/*==============support===============*/
-.widget-title {
-  letter-spacing: 0.5rem;
+.support_links h5 {
+  letter-spacing: 0.3rem;
   font-size: 14px;
-  padding-bottom: 5px;
+  color: var(--cards-color);
 }
-
-.footer_menu li {
-  margin: 0.7rem;
-  list-style: none;
-  text-align: left;
-  margin-left: 4.5rem;
+.support_links ul li {
+  list-style-type: none;
+  font-size: 14px;
+  padding: 5px;
 }
-
-.footer_menu li a {
+.support_links ul li a {
   text-decoration: none;
   color: var(--text-color);
+}
+.support_links ul li a:hover {
+  color: var(--primary-color)
+}
+
+.single_info p {
   font-size: 13px;
 }
-.footer_menu li a:hover {
-  color: var(--primary-color);
-}
-
-/*=============contact==========*/
-
-.single_info {
-  display: flex;
-  flex-wrap: wrap;
-  text-align: center;
-}
-.single_info .icon {
-  font-size: 12px;
-  color: var(--primary-color);
-  display: flex;
-  padding-left: 6rem;
-}
-.info p a {
-  color: var(--text-color);
+.widget_contact h5 {
   font-size: 14px;
-  text-align: center;
+  letter-spacing: 0.3rem;
+  color: var(--cards-color);
 }
-.single_info .info {
-  text-align: center;
+.widget_contact .single_info a{
+color: var(--text-color);
+  text-decoration: none;
 }
-.single_info .info p {
-  display: flex;
-  font-size: 13px;
-  padding-left: 1rem;
-}
-
 .copyright_area {
   text-align: center;
 }
 .copyright_text {
-  letter-spacing: 00.2rem;
+  letter-spacing: 0.2rem;
   color: var(--text-color);
   font-size: 12px;
 }
 /*============media qurries for mobile view==============*/
 
 @media only screen and (max-device-width: 480px) {
-  body{
+  body {
     overflow-x: hidden;
+  }
+  .navbar .navbar-brand {
+    object-fit: contain;
+    width: 50px;
+    height: auto;
   }
   .intro {
     padding-top: 5rem;
@@ -500,17 +495,19 @@ body {
   #services {
     height: 100%;
     z-index: 1;
+    margin-bottom: 0;
   }
 
   .service {
     font-size: 15px;
-    margin-top: 1rem;
+    margin-top: 0;
     text-align: center;
     letter-spacing: 0.5rem;
+    padding-top: 4rem;
   }
   .rule {
     height: 3px;
-    width: 140px;
+    width: 147px;
     position: relative;
     left: 30%;
     margin-bottom: 4rem;
@@ -520,23 +517,16 @@ body {
     margin-bottom: 10rem;
     position: relative;
   }
-
-   .card-side {
+  .card-side {
     position: absolute;
-  } 
-
-  #services .service-pic {
-    width:100%;
-    height: auto;
-    text-align: center;
-    border-radius: 5px;
-    object-fit: cover;
   }
   .card-service h3 {
     text-align: center;
-    font-size: 14px;
-    margin-top: 0.2rem;
+    font-size: 13px;
     letter-spacing: 0.1rem;
+  }
+  .card-side.back {
+    height: 20rem;
   }
 
   /* about*/
@@ -564,6 +554,8 @@ body {
   #about .btn-more {
     font-size: 12px;
     letter-spacing: 0.1rem;
+    color: var(--main-color);
+
   }
 
   #about .about-photo {
@@ -576,9 +568,10 @@ body {
   #trust {
     margin-bottom: 1rem;
     height: auto;
-    position: relative;
-    padding-top: 40rem;
+    /* position: relative; */
+    padding-top: 110rem;
     width: auto;
+
   }
 
   #trust .trust-text {
@@ -590,7 +583,6 @@ body {
   .trust .rule {
     height: 3px;
     width: 330px;
-    background-color: var(--primary-color);
     text-align: center;
     position: relative;
     left: 3%;
@@ -598,11 +590,20 @@ body {
   }
 
   .swiper {
-    max-width:100%;
+    /* max-width: 100%; */
     height: 40vh;
+    width: 35vh;
     justify-content: center;
-    margin-top: 2cm;
+    margin-top: 1cm;
     margin-bottom: 0.1rem;
+  }
+  .swiper-wrapper {
+    width: 100%;
+  }
+  .swiper-wrapper .clientee-pic {
+    object-fit: contain;
+    width: 200px;
+    height: 450px;
   }
 
   /*testimonail*/
@@ -626,66 +627,22 @@ body {
   #testify .card {
     margin-bottom: 2rem;
   }
-
-  /*=======footer========*/
-.widget-title {
-  letter-spacing: 0.5rem;
-  font-size: 14px;
-  padding-bottom: 5px;
-}
-
-.footer_menu li {
-  margin: 1px;
-  list-style: none;
-  display: inline;
-}
-
-.footer_menu li a {
-  text-decoration: none;
-  color: var(--text-color);
-  font-size: 12px;
-  display: inline;
-  font-style: bold;
-  margin-bottom: 2px;
-}
-.footer_menu li a:hover {
-  color: var(--primary-color);
-}
-
-/*=============contact==========*/
-
-.single_info {
-  display: flex;
-  flex-wrap: wrap;
-  /* text-align: center; */
-}
-.single_info .icon {
-  font-size: 12px;
-  color: var(--primary-color);
-  display: inline;
-  padding-left: 6rem;
-}
-.info p a {
-  color: var(--text-color);
-  font-size: 14px;
-  text-align: center;
-}
-.single_info .info {
-  text-align: center;
-}
-.single_info .info p {
-  display: flex;
-  font-size: 13px;
-  padding-left: 1rem;
-}
-
-  .copyright_area {
-    text-align: center;
+  #footer {
+    padding: 0 0 5px 5px;
   }
-  .copyright_text {
-    letter-spacing: 0.2rem;
-    color: var(--text-color);
-    font-size: 9px;
-    margin-top: 6rem;
+  ul.social {
+    list-style-type: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+  }
+  .support_links {
+    display: flex;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+  }
+  .support_links ul {
+    margin: 0;
+    padding: 0;
   }
 }
